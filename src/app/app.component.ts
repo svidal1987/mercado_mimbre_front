@@ -5,10 +5,12 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NzIconModule, NzLayoutModule, NzMenuModule,RouterLink,RouterLinkActive,NzButtonModule],
+  imports: [HttpClientModule,CommonModule, RouterOutlet, NzIconModule, NzLayoutModule, NzMenuModule,RouterLink,RouterLinkActive,NzButtonModule,NzBreadCrumbModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

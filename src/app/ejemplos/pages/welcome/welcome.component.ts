@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Component1Component } from "../home/component1/component1.component";
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { Component1Component } from '../home/component1/component1.component';
 
 @Component({
   selector: 'app-welcome',

@@ -1,0 +1,56 @@
+<form nz-form (ngSubmit)="search()" [nzLayout]="'inline'" style="max-width: 900px; margin-left: auto;margin-right: auto;">
+  <nz-form-item>
+      <nz-form-control>
+          <input nz-input placeholder="Fisrtname" [(ngModel)]="params.filter.firtname"  name="fisrtname" />
+      </nz-form-control>
+  </nz-form-item>
+
+  <button nz-button nzType="default" nzShape="circle" (click)="search()"><span nz-icon nzType="search"></span></button>
+</form>
+
+
+
+
+
+
+ <nz-table #fixedTable [nzData]="data" >
+    <thead>
+      <tr>
+        <th nzLeft>ID</th>
+        <th nzLeft>Fisrtname</th>
+        
+        <th nzLeft>Lastname</th>
+
+        <th nzRight>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    @for (data of data; track data._id) {
+        <tr>
+            <td nzLeft> {{data._id }}</td>
+            <td nzLeft> {{data.firtname }}</td>
+            <td nzLeft> {{data.lastname }}</td>
+            <td nzRight>
+                <a>action</a>
+              </td>
+            </tr>
+    }
+</tbody>
+</nz-table>
+
+
+
+
+
+
+
+
+
+<!-- IF:<br>
+@if (clientes.length<0) {
+    <p>component2 works!</p>
+} @else{
+    <p>component3 works!</p>
+}
+FOR:<br> -->
