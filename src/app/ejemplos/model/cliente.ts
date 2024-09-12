@@ -1,17 +1,13 @@
 export class Cliente{
-    id: number=0;
-    nombre :string | undefined
-    apellido :string | undefined
-    edad? :number
-    cuit :string | undefined
-    isLive : boolean = false
-
-    otracosa? : otracosa
-    constructor(){
-        this.nombre = "-"
-    }
+    _id?: number
+    firtname?: string
+    lastname?: string
 }
-
-export class otracosa{
-    id:number=0
+export class PaginaCliente{
+    page?: number
+    data?: Cliente[]
+    total?: number
+    perPage?: number
+    totalPage?: number
+    
 }

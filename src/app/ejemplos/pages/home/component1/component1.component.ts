@@ -41,6 +41,6 @@ export class Component1Component {
         
       },(err)=>{
         console.log(err)
-      }) 
+      },console.info) 
   }
 }
